@@ -109,12 +109,12 @@ PROJECTS.forEach(({ title, description, tags, image, link, github }) => {
     article.innerHTML = `
             <a href=${link} target="_blank" rel="noopener noreferrer">
                 <div class="flex items-center justify-between">
-                    <h3 class="mb-2 text-4xl font-semibold bg-gradient-to-br from-sky-300 to-cyan-400 inline-block text-transparent bg-clip-text">
+                    <h3 class="mb-4 md:mb-2 text-2xl md:text-4xl font-semibold bg-gradient-to-br from-sky-300 to-cyan-400 inline-block text-transparent bg-clip-text">
                         ${title}
                     </h3>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-square-arrow-right group-hover:translate-x-5 transition-all duration-200 ease-linear delay-200 mr-5"
+                        class="icon icon-tabler icon-tabler-square-arrow-right group-hover:translate-x-5 transition-all duration-200 ease-linear delay-200 sm:mr-5"
                         width="44"
                         height="44"
                         viewBox="0 0 24 24"
@@ -130,13 +130,13 @@ PROJECTS.forEach(({ title, description, tags, image, link, github }) => {
                         <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
                     </svg>
                 </div>
-                <p class="text-lg mb-4 text-pretty">${description}</p>
-                <div class="flex items-center justify-between">
-                    <ul class="flex gap-x-3 pb-5">
+                <p class="text-md md:text-lg mb-4 text-pretty">${description}</p>
+                <div class="sm:flex sm:items-center justify-between">
+                    <ul class="flex flex-wrap gap-y-2 gap-x-3 pb-5 justify-center sm:justify-start">
                         ${tags.map((tag) => `
                             <li>
                                 <span class="inline-flex items-center gap-x-2 py-1.5 px-3 rounded-lg text-xs font-medium ${tag.class}">
-                                    <img src="${tag.icon}" class="size-6 justify-center" alt="" />
+                                    <img src="${tag.icon}" class="hidden sm:block size-6 justify-center" alt="" />
                                     ${tag.name}
                                 </span>
                             </li>
@@ -146,7 +146,7 @@ PROJECTS.forEach(({ title, description, tags, image, link, github }) => {
                         href=${github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="flex items-center gap-x-5 mb-5 hover:scale-105 rounded-lg transition-all duration-700 hover:bg-cyan-200/20 p-2 hover:text-cyan-300/70"
+                        class="flex items-center justify-center  gap-x-5 mb-5 hover:scale-105 rounded-lg transition-all duration-700 hover:bg-cyan-200/20 p-2 hover:text-cyan-300/70"
                     >
                         <p>GitHub</p>
                         <svg
