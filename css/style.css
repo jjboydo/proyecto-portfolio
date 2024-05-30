@@ -15,10 +15,10 @@
 
 :root {
     color-scheme: light dark;
+    font-family: "REM Variable", system-ui, sans-serif;
 }
 
 html {
-    font-family: "REM Variable", system-ui, sans-serif;
     scroll-behavior: smooth;
 }
 
