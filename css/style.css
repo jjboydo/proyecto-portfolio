@@ -16,6 +16,7 @@
 :root {
     color-scheme: light dark;
     font-family: "REM Variable", system-ui, sans-serif;
+    color: white;
 }
 
 html {
