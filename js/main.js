@@ -72,10 +72,18 @@ const PROJECTS = [
     {
         title: "Coldwell Banker",
         description: "Aplicacion web para la gestión de un sistema inmobiliario",
-        link: "https://coldwellbanker.vercel.app/",
+        link: "https://coldwell-banker-stg-8ec127e86477.herokuapp.com/",
         github: "https://github.com/jjboydo/proyecto-coldwell-banker",
         image: "../assets/img/projects/813shots_so.png",
         tags: [TAGS.MONGODB, TAGS.EXPRESS, TAGS.REACT, TAGS.NODE, TAGS.TAILWIND, TAGS.REACT_ROUTER],
+    },
+    {
+        title: "Auditoría General de la Provincia de Salta",
+        description: "Sistema de Control de Entes Municipales de la Provincia De Salta",
+        link: "./",
+        github: "",
+        image: "../assets/img/projects/615shots_so.png",
+        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_ROUTER, TAGS.FIGMA]
     },
     {
         title: "Punto Padel",
